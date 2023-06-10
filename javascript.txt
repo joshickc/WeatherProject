@@ -1,0 +1,90 @@
+Notes for javascript
+
+History
+0's and 1's ->Assembly Language -> High Level Language
+
+We need a Language for browser, apart from html and css ?
+
+Earlier meant for browser only.
+ECMA script standard were formed.
+Browser engines were made based on these standards.
+These engines converted js to 0's and 1's.
+
+Next, step ? can we use it on backend ?
+Complier of chrome -> v8 engine
++ js -> Node.js
+
+Primitives
+Objects - Key value Pair
+
+var user1={
+    name:harkirat;
+    age:21;
+}
+
+var users = ["harkirat","raman"];
+
+
+for(int i=0;i<users.length;i++){
+    console.log(users[i]);
+}
+
+Functions
+A Primitive in JS.
+Functions can take other functions as input.
+Encapsulate a bunch of code.
+
+Rule of thumb
+DRY - Don't repeat yourself
+
+Taking other functions as input.
+
+function sum(num1, num2){
+    return num1+num2;
+}
+
+function multiply(num1, num2){
+    return num1*num2;
+}
+function divide(num1, num2){
+    return num1/num2;
+}
+
+function doArithmatic(num1, num2, arithmaticfn){
+    arithmaticfn(num1,num2);
+}
+
+var answer=doArithmatic(num1,num2,multiply);
+console.log(answer);
+
+Where can JS run ?
+Browser.
+Data centres
+Flight tv
+Mobile devices
+
+Single Threaded ?
+Multiple core machine.
+A core is a place where a code can execute.
+Therefore, JS will run on one core only.
+Things are done sequentially, that's why it takes time.
+
+Asynchronous ?
+listning to keyboard press,
+sending network request
+reading a file
+executing code,
+printing
+
+Asynchronous tasks can run on multiple threads.
+Therefore they can run simultaneously.
+
+Loosely typed ?
+
+
+Interpreted ?
+Directly Executed line by line, without compiling
+
+compile Language(eg C++) -> 1st compile the entire programe
+
+
