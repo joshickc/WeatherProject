@@ -88,3 +88,40 @@ Directly Executed line by line, without compiling
 compile Language(eg C++) -> 1st compile the entire programe
 
 
+Asynchronous javascript
+
+Asynchronous
+Callback
+Promises
+Arrow
+
+Javascript is Single Threaded, synchronous, Interpreted programming language.
+
+But it allows for asynchronous programming.
+
+Asynchronous - 
+while waiting for a longterm task to execute
+we are able to do other task as well.
+
+Synchronous - > Sequentially
+Asynchronous - > Concurrently
+
+Asynchronous Functions -> 
+functions that do not need JS thread, for running. 
+This helps in creating asynchronous programming.
+Eg Reading a file, sending request to server.
+
+Note- first the single thread will complete its task, only when it completes
+its task and is idle than it picks up the asynchronous task.
+
+only when js is finished with synchronous task can it take up asynchronous task.
+
+asynchronous task goes to web api -> than callback queque -> event loop puts it into the call stack.
+
+Chaining -> one async call after another async call.
+
+Problem -> they look ugly. callback hell
+
+Therefore, Promises a new class introduced.
+
+
